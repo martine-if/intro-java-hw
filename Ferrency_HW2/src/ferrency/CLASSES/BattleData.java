@@ -1,6 +1,7 @@
 package ferrency.CLASSES;
 
 public class BattleData {
+	
 	public static String[][] data = { 
 			{"TP-1_SYNC","11","1","5","2"}, 
 			{"TP-2_SYTH","23","3","2","4"}, 

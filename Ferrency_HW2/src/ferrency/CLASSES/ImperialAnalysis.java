@@ -35,9 +35,9 @@ public class ImperialAnalysis {
 
 	public static String pilotRating(double pv) {
 		String rating = "";
-		// …greater than 20 Rating is 'Elite’
-		// …greater than 12 and less than or equal to 20 Rating is ‘Veteran’
-		// …less than or equal to 12 Rating is ‘Standard’
+		//greater than 20 Rating is 'Elite’
+		//greater than 12 and less than or equal to 20 Rating is ‘Veteran’
+		//less than or equal to 12 Rating is ‘Standard’
 		if (pv > 20) {
 			rating = "Elite";
 		} else if (pv > 12) {
