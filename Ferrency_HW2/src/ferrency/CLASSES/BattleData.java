@@ -2,6 +2,7 @@ package ferrency.CLASSES;
 
 public class BattleData {
 	public static String[][] data = { 
+			//pilot and call sign, # of missions, x-wing kills, y-wing kills, b-wing kills
 			{"TP-1_SYNC","11","1","5","2"}, 
 			{"TP-2_SYTH","23","3","2","4"}, 
 			{"TP-3_SYBV","15","2","3","1"}, 
