@@ -73,7 +73,6 @@ public class ImperialAnalysis {
 			killPoints[0] = fighterKillPoints(convertToDouble(array[2]));
 			killPoints[1] = bomberKillPoints(convertToDouble(array[3]));
 			killPoints[2] = assaultFighterPoints(convertToDouble(array[4]));
-			double killSum = killPoints[0] + killPoints[1] + killPoints[2];
 			// Mission and Kill values
 			System.out.println(String.format("%-8s %-16s %-16s %-16s %-2s %16s", array[0].substring(0, 4),
 					array[0].substring(5), array[1], array[2], array[3], array[4]));
