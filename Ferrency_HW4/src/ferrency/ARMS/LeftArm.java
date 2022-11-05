@@ -17,10 +17,19 @@ public class LeftArm extends Arm{
 		this.setUpper(Limb.Upper);
 		this.setLower(Limb.Lower);
 	}
-
+	
+	//Checks that status of the LeftArmStatus is ONLINE and the status of the its pad is also
+	//ONLINE if so, returns true otherwise sets the LeftArmStatus to OFFLINE and returns false.
+	
 	@Override
 	public boolean armCheck() {
-		return false;
+		if(getLeftArmStatus() == Status.ONLINE && this.getPad().padCheck()) {
+			return true;
+		}
+		else {
+			this.setLeftArmStatus(Status.OFFLINE);
+			return false;
+		}
 	}
 
 	public Status getLeftArmStatus() {

@@ -19,7 +19,13 @@ public class RightArm extends Arm {
 
 	@Override
 	public boolean armCheck() {
-		return false;
+		if(getRightArmStatus() == Status.ONLINE && this.getPad().padCheck()) {
+			return true;
+		}
+		else {
+			this.setRightArmStatus(Status.OFFLINE);
+			return false;
+		}
 	}
 
 	public Status getRightArmStatus() {
