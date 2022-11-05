@@ -14,7 +14,11 @@ private Status rightPadStatus;
 
 	@Override
 	public boolean padCheck() {
-		return false;
+		if(this.getRightPadStatus() == Status.ONLINE) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 	public Status getRightPadStatus() {

@@ -15,7 +15,11 @@ public class LeftFootPad extends FootPad{
 
 	@Override
 	public boolean padCheck() {
-		return false;
+		if(this.getLeftPadStatus() == Status.ONLINE) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 	public Status getLeftPadStatus() {
