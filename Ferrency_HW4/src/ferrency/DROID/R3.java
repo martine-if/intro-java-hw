@@ -1,15 +1,29 @@
 package ferrency.DROID;
 
+import ferrency.ARMS.*;
+import ferrency.COMPONENT.*;
 import ferrency.ENUMS.Battery;
 import ferrency.ENUMS.Status;
 
 public class R3 extends AstromechDroid{
 	
-	Status R3Status = Status.ONLINE;
-	Battery R3Battery = Battery.R3;
+	Status R3Status;
+	Battery R3Battery;
 	
 	public R3(String serialNumber) {
 		super(serialNumber);
+		this.R3Status = Status.ONLINE;
+		this.R3Battery = Battery.R3;
+		this.setDome(new SensorDome(this.getSerialNumber()));
+		this.getDome().setHeight(2);
+		this.getDome().setWeight(200);
+		this.setChasis(new Chasis(this.getSerialNumber()));
+		this.getChasis().setHeight(4);
+		this.getChasis().setWeight(400);
+		this.setLeftArm(new LeftArm());
+		this.setRightArm(new RightArm());
+		this.setHeight(this.getDome().getHeight() + this.getChasis().getHeight());
+		this.setWeight(this.getDome().getWeight() + this.getChasis().getWeight());
 	}
 
 

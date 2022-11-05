@@ -1,17 +1,34 @@
 package ferrency.DROID;
 
+import ferrency.ARMS.LeftArm;
+import ferrency.ARMS.RightArm;
+import ferrency.COMPONENT.Chasis;
+import ferrency.COMPONENT.SensorDome;
 import ferrency.ENUMS.Battery;
 import ferrency.ENUMS.Radar;
 import ferrency.ENUMS.Status;
 
 public class R4 extends AstromechDroid{
 	
-	Status R4Status = Status.ONLINE;
-	Battery R4Battery = Battery.R4;
-	Radar R4Radar = Radar.R4R;
+	Status R4Status;
+	Battery R4Battery;
+	Radar R4Radar;
 	
 	public R4(String serialNumber) {
 		super(serialNumber);
+		this.R4Status = Status.ONLINE;
+		this.R4Battery = Battery.R4;
+		this.R4Radar = Radar.R4R;
+		this.setDome(new SensorDome(this.getSerialNumber()));
+		this.getDome().setHeight(2);
+		this.getDome().setWeight(150);
+		this.setChasis(new Chasis(this.getSerialNumber()));
+		this.getChasis().setHeight(5);
+		this.getChasis().setWeight(500);
+		this.setLeftArm(new LeftArm());
+		this.setRightArm(new RightArm());
+		this.setHeight(this.getDome().getHeight() + this.getChasis().getHeight());
+		this.setWeight(this.getDome().getWeight() + this.getChasis().getWeight());
 	}
 
 	@Override
@@ -28,7 +45,7 @@ public class R4 extends AstromechDroid{
 	
 	public void displayDroid() {
 		//display info 
-		System.out.println("R3 Astromech");
+		System.out.println("R4 Astromech");
 		System.out.println("Serial Number: " + this.getSerialNumber());
 		System.out.println("Status: " + R4Status);
 		System.out.println("Battery: " + R4Battery);
