@@ -1,7 +1,9 @@
 package ferrency.ARMS;
 
+import ferrency.ENUMS.Limb;
 import ferrency.ENUMS.Side;
 import ferrency.ENUMS.Status;
+import ferrency.PAD.RightFootPad;
 
 public class RightArm extends Arm {
 	private Status rightArmStatus;
@@ -10,9 +12,9 @@ public class RightArm extends Arm {
 		super("RA-02");
 		this.rightArmStatus = Status.ONLINE;
 		this.setSide(Side.RIGHT);
-		this.setPad(RightFoodPad);
-		this.setUpper(Upper);
-		this.setLower(Lower);
+		this.setPad(new RightFootPad());
+		this.setUpper(Limb.Upper);
+		this.setLower(Limb.Lower);
 	}
 
 	@Override
