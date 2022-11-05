@@ -1,5 +1,5 @@
 package ferrency.ENUMS;
 
-public class Side {
-
+public enum Side {
+	LEFT,RIGHT
 }
