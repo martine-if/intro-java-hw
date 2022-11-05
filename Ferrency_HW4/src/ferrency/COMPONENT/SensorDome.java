@@ -46,6 +46,10 @@ public class SensorDome {
 	}
 
 	public boolean sensorDomeCheck() {
-		return true;
+		if(this.getStatus() == Status.ONLINE) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 }

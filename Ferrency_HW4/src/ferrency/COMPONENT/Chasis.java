@@ -47,7 +47,11 @@ public class Chasis {
 	}
 	
 	public boolean chasisCheck() {
-		return true;
+		if(this.getStatus() == Status.ONLINE) {
+			return true;
+		}else {
+			return false;
+		}
 	}
 	
 }
