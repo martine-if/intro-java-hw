@@ -1,5 +1,5 @@
 package ferrency.INTERFACES;
 
-public class Droid {
-
+public interface Droid {
+	public abstract void displayDroid();
 }
