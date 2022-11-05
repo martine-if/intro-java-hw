@@ -5,11 +5,11 @@ import ferrency.ENUMS.Status;
 
 public class LeftArm extends Arm{
 	
-	private Status status;
+	private Status leftArmStatus;
 
 	public LeftArm() {
 		super("LA-01");
-		this.status = Status.ONLINE;
+		this.setLeftArmStatus(Status.ONLINE);
 		this.setSide(Side.LEFT);
 		this.setPad(LeftFoodPad);
 		this.setUpper(Upper);
@@ -19,6 +19,14 @@ public class LeftArm extends Arm{
 	@Override
 	public boolean armCheck() {
 		return false;
+	}
+
+	public Status getLeftArmStatus() {
+		return leftArmStatus;
+	}
+
+	public void setLeftArmStatus(Status leftArmStatus) {
+		this.leftArmStatus = leftArmStatus;
 	}
 		
 }
