@@ -44,7 +44,7 @@ public class R3 extends AstromechDroid{
 		System.out.println("R3 Astromech");
 		System.out.println("Serial Number: " + this.getSerialNumber());
 		System.out.println("Status: " + R3Status);
-		System.out.println("Battery: " + R3Battery);
+		System.out.println("Battery: " + R3Battery.getType());
 		System.out.println("Sensor Dome Serial Number " + this.getDome().getSerialNumber());
 		System.out.println("Chasis Serial Number " + this.getChasis().getSerialNumber());
 		System.out.println("Left Arm Serial Number " + this.getLeftArm().getSerialNumber());
