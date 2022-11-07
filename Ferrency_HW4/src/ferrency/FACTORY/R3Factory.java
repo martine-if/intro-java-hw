@@ -1,6 +1,5 @@
 package ferrency.FACTORY;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import ferrency.DROID.AstromechDroid;
@@ -18,7 +17,7 @@ public class R3Factory extends DroidFactory{
 	public boolean buildDroids(int count) {
 		for(int i=0;i<count;i++) {
 			this.setDroidStorage(new ArrayList<AstromechDroid>());
-			this.getDroidStorage().add(new R3("R3-" + new DecimalFormat("000").format(i)));
+			this.getDroidStorage().add(new R3("R3-" + String.format("%03d", i)));
 		}
 		return true;
 	}
