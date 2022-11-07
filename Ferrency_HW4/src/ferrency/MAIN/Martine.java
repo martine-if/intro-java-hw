@@ -18,6 +18,6 @@ public class Martine {
 		R4F.displayAllDroids();
 		
 		R3F.getDroidStorage().get(0).getLeftArm().setLeftArmStatus(Status.OFFLINE);
-		//R3F.getDroidStorage().get(0).checkLeftStatus();
+		R3F.getDroidStorage().get(0).checkStatus();
 	}
 }
