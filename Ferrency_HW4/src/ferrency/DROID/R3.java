@@ -49,6 +49,7 @@ public class R3 extends AstromechDroid{
 		System.out.println("Chasis Serial Number " + this.getChasis().getSerialNumber());
 		System.out.println("Left Arm Serial Number " + this.getLeftArm().getSerialNumber());
 		System.out.println("Right Arm Serial Number " + this.getRightArm().getSerialNumber());
+		System.out.println();
 	}
 	
 }
