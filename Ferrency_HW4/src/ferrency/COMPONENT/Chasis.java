@@ -7,10 +7,11 @@ public class Chasis {
 	private String serialNumber;
 	private double height;
 	private double weight;
-	private Status status = Status.ONLINE;
+	private Status status;
 	
 	public Chasis(String serialNumber) {
 		this.serialNumber = serialNumber;
+		this.status = Status.ONLINE;
 	}
 	
 
