@@ -1,0 +1,32 @@
+Source Program: a program written in a high-level language (human readable, not machine code)
+Kilobyte: a unit of measurement for computer memory
+Java Virtual Machine: allows a computer to run programs written in Java
+Assembly Language: a programming language that communicates with the computer's hardware 
+Application Programming Interface: API, allows programs to access each other's data/functionality
+Java Development Toolkit: includes tools for writing and running Java programs
+Algorithm: a set of instructions to accomplish a goal
+Numeric Literal: a sequence of characters from 0 to 9, can also include +, - or .
+Logic Error: a bug that causes a program to produce an unintended output
+Comment: human language in a program to make it more readable/organized for people reading the code
+Integrated Development Environment: an application like eclipse that allows the user to easily write and compile code
+Iteration: repetition of a process
+Parameter: a variable passed into a function
+Static Method: method belonging to the class, not an instance of the class
+Method Signature: method name and list of parameters
+Method Overloading: allows methods to have the same name if they do NOT have the same parameters
+Variable Scope: where the variable can be accessed in the program
+Array: a collection of elements (can be objects, integers, data structures, etc)
+Class: a recipe for creating an object
+Object: instance of a class
+Casting: changing the data type of a variable
+Polymorphism: allows the use of inherited methods and attributes for different tasks
+Inheritance: defining a class (subclass) from an existing class (superclass)
+Object Composition: combining objects and datatypes into more complex ones
+Abstract Class: a class that is declared abstract, can include abstract methods, cannot create objects
+Interface: a collection of abstract, default, or static methods
+Syntax Error: an error in how code is written that prevents the program from compiling 
+Runtime Error: an error that occurs while the program is running
+Serialization: representing the state of an object as a sequence of 1s and 0s
+Deserialization: converting a sequence of 1s and 0s to an object
+Enumerations: contains predefined constants that do not change
+Exception Handling: mitigating runtime errors so the flow of the program can be maintained
